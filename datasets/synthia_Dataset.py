@@ -102,12 +102,13 @@ class SYNTHIA_DataLoader():
         self.args = args
 
         data_set = SYNTHIA_Dataset(args, 
-                                data_root_path=args.data_root_path,
-                                list_path=args.list_path,
-                                split=args.split,
-                                base_size=args.base_size,
-                                crop_size=args.crop_size,
-                                training=training)
+                                   data_root_path=args.data_root_path,
+                                   list_path=args.list_path,
+                                   split=args.split,
+                                   base_size=args.base_size,
+                                   crop_size=args.crop_size,
+                                   training=training,
+                                   class_16=args.class_16)
 
         if self.args.split == "train" or self.args.split == "trainval" or self.args.split =="all":
             self.data_loader = data.DataLoader(data_set,
@@ -133,7 +134,8 @@ class SYNTHIA_DataLoader():
                                   split=val_split,
                                   base_size=args.base_size,
                                   crop_size=args.crop_size,
-                                  training=False)
+                                  training=False,
+                                  class_16=args.class_16)
         self.val_loader = data.DataLoader(val_set,
                                           batch_size=self.args.batch_size,
                                           shuffle=False,
