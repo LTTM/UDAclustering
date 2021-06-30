@@ -55,7 +55,7 @@ GTA5 with ResNet101:
 Download the ResNet101's weights pretrained on ImageNet from [here](https://drive.google.com/file/d/1GJzH9dVouqyUNZ4tYAL3VE2iKkGuKBaH/view?usp=sharing) and run
 > python tools/train_source.py --backbone "resnet101" --dataset "gta5" --num_classes 19 --checkpoint_dir "./log/gta5-resnet_pretrain/" --iter_max 200000 --iter_stop 80000 --lr 2.5e-4 --crop_size "1280,720"
 
-Alternatively, you can download the GTA5 pretrained weights from [here](https://drive.google.com/file/d/1SnELGaV8qebqpyJ4PC1tKjsH60NszaIt/view?usp=sharing).
+Alternatively, you can download the GTA5 pretrained weights from [here](https://drive.google.com/file/d/14LnlicyizbbqEeeZhUE-uOwtMYZ4p5fr/view?usp=sharing).
 
 ### Unsupervised Domain Adaptation
 
