@@ -1,4 +1,14 @@
 # Unsupervised Domain Adaptation in Semantic Segmentation via Orthogonal and Clustered Embeddings
+
+<div align="center">
+ 
+[![Paper](https://img.shields.io/badge/arXiv-2011.12616-red)](https://arxiv.org/abs/2011.12616)
+[![WACV](https://img.shields.io/badge/WACV-2021-green)](https://openaccess.thecvf.com/WACV2021)
+[![Video](https://img.shields.io/badge/Video-presentation-yellow)](https://www.youtube.com/watch?v=mTRimyHe-Vo&feature=youtu.be)
+ [![BibTeX](https://img.shields.io/badge/Cite_us-BibTeX-blue)](#Citation)
+ 
+ </div>
+ 
 This is the official PyTorch implementation of our work: "Unsupervised Domain Adaptation in Semantic Segmentation via Orthogonal and Clustered Embeddings" accepted at WACV 2021.
 
 In this paper we propose an effective Unsupervised Domain Adaptation (UDA) strategy, based on feature clustering, orthogonality and sparsity objectives to reach a regularized disposition of latent embeddings , while providing a semantically consistent domain alignment over the feature space. 
@@ -85,6 +95,7 @@ GTA5-to-Cityscapes with ResNet101:
 > python tools/evaluate.py --source_dataset "gta5" --num_classes 19 --backbone "resnet101" --split "test" --target_crop_size "1024,512" --checkpoint_dir "./log/eval/gta2city-resnet_UDA/" --pretrained_ckpt_file "./log/gta2city-resnet_UDA/gta52cityscapesfinal.pth"
 
 
+<a name="Citation"></a>
 ## Cite us
 If you use this repository, please consider to cite
 
